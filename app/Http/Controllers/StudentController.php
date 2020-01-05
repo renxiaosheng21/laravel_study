@@ -13,18 +13,18 @@ class StudentController extends Controller//继承Controller控制器
 		dd($student);//返回的是一个数组
 
 		/*插入*/
-		//$bool = DB::insert('insert into student(name,age) values(?,?)',array('ryh',18));
-		//var_dump($bool);
+		$bool = DB::insert('insert into student(name,age) values(?,?)',array('ryh',18));
+		var_dump($bool);
 		//$bool = DB::insert('insert into student(name,age,sex) values(?,?,?)',array('张营',21,'女'));
 		//var_dump($bool);
 
 		/*更新*/
-		//$num = DB::update('update student set age = :age where name = :name',array('age'=>20,'name'=>'sean'));
-		//var_dump($num);//返回的是影响的行数
+		$num = DB::update('update student set age = :age where name = :name',array('age'=>20,'name'=>'sean'));
+		var_dump($num);//返回的是影响的行数
 
 		/*删除*/
-		/*$num = DB::delete('delete from student where id=:id',array('id'=>4));
-		var_dump($num);*/
+		$num = DB::delete('delete from student where id=:id',array('id'=>4));
+		var_dump($num);
 
 	}
 	//使用查询构造器插入数据
