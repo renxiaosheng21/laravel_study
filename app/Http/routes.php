@@ -10,7 +10,9 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+/*
+ *路由及其的使用
+ * */
 Route::get('/', function () {
     return view('welcome');
 });
