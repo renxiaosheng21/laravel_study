@@ -9,7 +9,7 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
      */
     protected $baseUrl = 'http://localhost';
 
-    /** 开发
+    /** 开发2
      * Creates the application.
      *
      * @return \Illuminate\Foundation\Application
